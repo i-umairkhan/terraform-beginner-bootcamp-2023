@@ -1,4 +1,10 @@
 terraform {
+  cloud {
+    organization = "i-umairkhan"
+    workspaces {
+      name = "terra-town"
+    }
+  }
   required_providers {
     random = {
       source  = "hashicorp/random"
@@ -12,18 +18,16 @@ terraform {
 }
 
 
-provider "random" {
-}
+provider "random" {}
 
-provider "aws" {
-}
+provider "aws" {}
 
 
 resource "random_string" "bucket_name" {
   length  = 16
   special = false
-  lower = true
-  upper = false
+  lower   = true
+  upper   = false
 }
 
 resource "aws_s3_bucket" "example" {
