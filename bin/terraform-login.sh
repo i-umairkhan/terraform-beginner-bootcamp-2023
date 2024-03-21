@@ -24,7 +24,7 @@ cat > "$TARGET_FILE" << EOF
 {
   "credentials": {
     "app.terraform.io": {
-      "token": "$TERRAFORM_LOGIN_TOKEN"
+      "token": "$TERRAFORM_LOGIN_TOKEN" 
     }
   }
 }
