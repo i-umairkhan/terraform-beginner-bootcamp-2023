@@ -3,6 +3,7 @@ tasks:
     before: |
       source ./bin/install-terraform-cli.sh
       source ./bin/terraform-login.sh
+      cp $PROJECT_ROOT/terraform.tfvars.example $PROJECT_ROOT/terraform.tfvars
   - name: aws-cli
     env:
       AWS_CLI_AUTO_PROMPT: on-partial
