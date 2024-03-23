@@ -1,10 +1,10 @@
 terraform {
-  cloud {
-    organization = "i-umairkhan"
-    workspaces {
-      name = "terra-town"
-    }
-  }
+  # cloud {
+  #   organization = "i-umairkhan"
+  #   workspaces {
+  #     name = "terra-town"
+  #   }
+  # }
   required_providers {
     random = {
       source  = "hashicorp/random"
